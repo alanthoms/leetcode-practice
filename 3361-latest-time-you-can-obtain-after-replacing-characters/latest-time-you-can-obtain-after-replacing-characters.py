@@ -1,5 +1,5 @@
 class Solution:
-    def findLatestTime(self, s: str) -> str:
+    def findLatestTime(self,s):
         
         hr0, hr1, _ , mn0, mn1 = list(s)
 
