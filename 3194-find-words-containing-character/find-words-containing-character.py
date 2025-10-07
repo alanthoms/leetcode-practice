@@ -1,5 +1,5 @@
 class Solution:
-    def findWordsContaining(self, words: List[str], x: str) -> List[int]:
+    def findWordsContaining(self, words, x):
         r = []
         for i,y in enumerate(words):
             for j in y:
