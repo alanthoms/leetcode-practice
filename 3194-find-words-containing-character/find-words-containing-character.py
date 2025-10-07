@@ -1,11 +1,9 @@
 class Solution:
     def findWordsContaining(self, words, x):
         r = []
-        for i,y in enumerate(words):
-            for j in y:
-                if j == x:
-                    r.append(i)
-                    break
+        for i,word in enumerate(words):
+            if x in word:
+                r.append(i)
         return r
             
         
