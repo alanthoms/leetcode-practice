@@ -1,7 +1,8 @@
 class Solution:
     def reverseBits(self, n: int) -> int:
         res = 0
-        for i in range(32):
-            bit = (n >> i) & 1
-            res = res | (bit << (31 - i))
+        for _ in range(32):
+            res = res << 1      # make space
+            res |= (n & 1)      # add last bit of n
+            n >>= 1             # shift n right
         return res
